@@ -1,0 +1,23 @@
+.cont-main{
+
+    padding-inline: 25px;
+    border: 20px;
+    
+}
+
+.program{
+
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    line-height: 30px;
+}
+
+h1{
+
+    border: 5px solid;
+}
+
+

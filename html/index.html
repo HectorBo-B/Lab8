@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../css/estilos.css">
+<head>
+
+<Title>Lab 8: Calculadora</Title>
+<meta lang= "ES">
+</head>
+
+<body>
+
+    <!--Contenedpr principal del contenido-->
+    <div class="cont-main">
+        <h1>Programas Matemáticos</h1>
+        <!--Programa 1: Suma de tres números-->
+        <div class="program">
+            <h3>Suma de tres números</h3>
+            <label>Primer número: </label>
+            <input type="text" id="sum1"> <br>
+   
+            <label>Segundo número: </label>
+            <input type="number" id="sum2"> <br>
+
+            <label>Tercer número: </label>
+            <input type="number" id="sum3"> <br>
+
+            <button type="submit" onclick="sumaTR()">sumar</button> <br>
+
+            <hr>
+            <label>Resultado: </label>
+            <output id="sumRST"></output>
+
+        </div>
+
+
+        <!--Programa 2: Cuadrado de un número-->
+        <div class="program">
+            <h3>Elevar un número al cuadrado</h3>
+            <label>Inserte un número: </label>
+            <input type="number" id="cuadr"> <br>
+
+            <button type="submit" onclick="sqrd()">calcular</button>
+            <hr>
+            <label>Resultado: </label>
+            <output id = "quad"></output>
+        </div>
+        
+
+        <!--Programa 3: Promedio de tres números-->
+        <div class="program">
+            <h3>Promedio de 3 números</h3>
+            <label>Primer número: </label>
+            <input type = "number" id="n1"> <br>
+
+            <label>Segundo número: </label>
+            <input type = "number" id="n2"> <br>
+
+            <label>Tercer número: </label>
+            <input type = "number" id="n3"> <br>
+
+            <button type="submit" onclick="avg()">buscar promedio</button> <br>
+            <hr>
+            <label>Promedio: </label> <br>
+            <output id="avg"></output>
+        </div>
+
+
+        <!--Programa 4: Conversión de unidades (metros a centimetros y kilometros)-->
+        <div class = "program">
+            <h3>Conversor a centimetros y Kilometros</h3>
+            <label>Metros: </label>
+            <input type="number" id="origin"> <br>
+            <button type="submit" onclick="converter()">convertir</button>
+            <hr>
+            <label>Kilometros: </label> <output id="kil"></output> <br>
+            <label>Centimetros: </label> <output id="cent"></output>
+
+        </div>
+
+
+        <!--Programa 5: comparación de dos números (mayor o menor que)-->
+        <div class="program">
+            <h3>Comparación de dos números</h3>
+            <label>Primer número</label>
+            <input type="number" id="numb1"> <br>
+
+            <label>Segundo número</label>
+            <input type="number" id="numb2"> <br> 
+            <button type="submit" onclick="compare()">comparar</button> <br>
+            <hr>
+            <label>Número mayor: </label> <output id="NumM"> </output> <br>
+            <label>Número menor: </label> <output id="NumMN"></output> <br>
+            <label>Diferencia: </label> <output id="diff"></output> <br>
+
+        </div>
+
+        <!--Final-->
+    </div>
+
+</body>
+
+<!--Importe del script al programa-->
+<script src = "../js/utility.js"></script>
